@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MarineCast — Spatiotemporal marine species forecasting</title>
+<meta name="description" content="MarineCast turns open satellite and reanalysis oceanography into a daily forecast of where target species are and how much can be caught there. Built on scientific survey data with true absence records.">
+<meta name="theme-color" content="#050B10">
+<link rel="canonical" href="https://astryxstartup.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MarineCast">
+<meta property="og:title" content="MarineCast — Spatiotemporal marine species forecasting">
+<meta property="og:description" content="Open satellite and reanalysis oceanography turned into a daily forecast of where target species are. Trained on survey data that records absence as well as presence.">
+<meta property="og:url" content="https://astryxstartup.com/">
+<meta property="og:image" content="https://astryxstartup.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MarineCast — Spatiotemporal marine species forecasting">
+<meta name="twitter:description" content="Open satellite and reanalysis oceanography turned into a daily forecast of where target species are.">
+<meta name="twitter:image" content="https://astryxstartup.com/assets/og.png">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Chivo:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <a class="brand" href="/">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="10.2" stroke="#34D8C4" stroke-width="1.3"/>
+      <path d="M2.6 9.4c3.6 1.9 7 1.9 9.4 0 2.4-1.9 5.8-1.9 9.4 0" stroke="#34D8C4" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M2.6 14.6c3.6 1.9 7 1.9 9.4 0 2.4-1.9 5.8-1.9 9.4 0" stroke="#1D8F82" stroke-width="1.3" stroke-linecap="round"/>
+    </svg>
+    <span>MarineCast</span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#method">Method</a>
+    <a href="#performance">Performance</a>
+    <a href="#data">Data</a>
+    <a href="#coverage">Coverage</a>
+    <a href="/technology.html">Science</a>
+  </nav>
+  <a class="btn btn-ghost btn-sm" href="#access">Request access</a>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap split">
+      <div class="hero-copy">
+        <p class="eyebrow" style="margin:0">Earth Observation · Fisheries Intelligence</p>
+        <h1 class="h-hero">Stop searching.<br>Start at the right coordinate.</h1>
+        <p class="lede">MarineCast turns open satellite and reanalysis oceanography into a daily forecast of where target species are — and how much you can expect to catch there. Less search time means less fuel burned and fewer hours at sea.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#access">Request early access</a>
+          <a class="btn btn-ghost" href="#performance">See the numbers</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="n tnum">20,358</div><div class="t">Survey hauls</div></div>
+          <div><div class="n tnum">1991—2026</div><div class="t">Record span</div></div>
+          <div><div class="n tnum">2</div><div class="t">Basins live</div></div>
+        </div>
+      </div>
+
+      <figure class="mapfig" style="margin:0">
+        <div class="mapfig-head">
+          <span class="mono lbl">Baltic Sea · Sprat</span>
+          <span class="mono" style="font-size:10px;color:var(--lume)">● FORECAST SURFACE</span>
+        </div>
+        <svg viewBox="0 0 520 470" role="img" aria-label="Heatmap of predicted sprat catch rate across the Baltic Sea, with hotspots in the Gotland basin and the Danish straits.">
+          <defs>
+            <clipPath id="sea"><path d="M268 22C300 30 318 72 314 118 310 164 288 196 292 232L300 244C340 250 400 244 452 250 482 254 490 274 470 286 448 300 396 296 356 300 344 302 340 312 348 322 366 344 392 352 386 372 380 392 348 388 326 374 306 362 294 344 276 346 252 350 240 378 222 404 202 432 172 448 142 452 112 456 88 476 74 500 60 524 34 532 22 518 10 504 20 480 42 462 70 440 116 428 146 408 178 386 196 356 208 320 222 278 228 226 224 172 220 118 226 58 268 22Z"/></clipPath>
+            <radialGradient id="h1"><stop offset="0" stop-color="#F2A03D" stop-opacity=".95"/><stop offset=".45" stop-color="#35B0A0" stop-opacity=".5"/><stop offset="1" stop-color="#1B6E8C" stop-opacity="0"/></radialGradient>
+            <radialGradient id="h2"><stop offset="0" stop-color="#E4574A" stop-opacity=".9"/><stop offset=".4" stop-color="#F2A03D" stop-opacity=".45"/><stop offset="1" stop-color="#1B6E8C" stop-opacity="0"/></radialGradient>
+            <radialGradient id="h3"><stop offset="0" stop-color="#C9D74E" stop-opacity=".75"/><stop offset="1" stop-color="#1B6E8C" stop-opacity="0"/></radialGradient>
+          </defs>
+          <g clip-path="url(#sea)">
+            <rect width="520" height="470" fill="#0B2E4F"/>
+            <g stroke="#12496E" stroke-width="1" opacity=".55">
+              <path d="M40 60h460M40 120h460M40 180h460M40 240h460M40 300h460M40 360h460M40 420h460"/>
+              <path d="M60 0v470M120 0v470M180 0v470M240 0v470M300 0v470M360 0v470M420 0v470"/>
+            </g>
+            <ellipse cx="300" cy="300" rx="120" ry="96" fill="url(#h1)"/>
+            <ellipse cx="196" cy="392" rx="86" ry="62" fill="url(#h2)"/>
+            <ellipse cx="270" cy="140" rx="72" ry="86" fill="url(#h3)"/>
+            <ellipse cx="404" cy="268" rx="58" ry="34" fill="url(#h3)" opacity=".7"/>
+          </g>
+          <path d="M268 22C300 30 318 72 314 118 310 164 288 196 292 232L300 244C340 250 400 244 452 250 482 254 490 274 470 286 448 300 396 296 356 300 344 302 340 312 348 322 366 344 392 352 386 372 380 392 348 388 326 374 306 362 294 344 276 346 252 350 240 378 222 404 202 432 172 448 142 452 112 456 88 476 74 500 60 524 34 532 22 518 10 504 20 480 42 462 70 440 116 428 146 408 178 386 196 356 208 320 222 278 228 226 224 172 220 118 226 58 268 22Z" fill="none" stroke="#34D8C4" stroke-width="1.4" opacity=".8"/>
+          <g fill="#E8F1F5" opacity=".9"><circle cx="300" cy="300" r="3.4"/><circle cx="196" cy="392" r="3.4"/><circle cx="270" cy="140" r="3.4"/></g>
+          <g fill="#7E96A6" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1">
+            <text x="238" y="86">BOTHNIA</text><text x="392" y="266">RIGA</text><text x="318" y="308">GOTLAND</text><text x="118" y="466">DANISH STRAITS</text>
+          </g>
+        </svg>
+        <div class="readout" aria-hidden="true">
+          <div class="mono" style="font-size:9px;letter-spacing:.14em;color:var(--depth)">55.51°N · 20.61°E</div>
+          <div class="v tnum">2,071<span style="font-size:12px;color:var(--tide)"> kg/h</span></div>
+          <div style="font-size:11px;color:var(--tide)">Top-quintile catch rate</div>
+          <div class="row" style="border-top:1px solid var(--line);padding-top:9px"><span style="color:var(--depth)">DEPTH</span><span style="color:var(--foam)">62 m</span></div>
+          <div class="row"><span style="color:var(--depth)">WIND</span><span style="color:var(--foam)">11.4 m/s NW</span></div>
+        </div>
+        <figcaption class="mapfig-foot">
+          <span class="mono" style="font-size:9px;color:var(--depth)">LOW</span>
+          <span class="ramp"></span>
+          <span class="mono" style="font-size:9px;color:var(--depth)">HIGH</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="wrap split split-side split-top">
+      <div>
+        <p class="eyebrow">01 — The problem</p>
+        <h2 class="h-sec">Fuel is burned looking, not fishing.</h2>
+      </div>
+      <div>
+        <p class="body-muted" style="font-size:17px">Most of the cost of a trip is incurred while searching. The conventional method — returning to the same grounds in the same months, on accumulated experience — degrades as conditions shift between years. Stocks move. The grounds do not.</p>
+        <div class="hairline hairline-3" style="margin-top:24px">
+          <div class="stat"><div class="stat-n tnum">8.4×</div><p class="stat-t">More sprat per hour in the model's top-ranked cells than its bottom half</p></div>
+          <div class="stat"><div class="stat-n tnum">0.988</div><p class="stat-t">Best presence ROC-AUC across six modelled species</p></div>
+          <div class="stat"><div class="stat-n tnum">€0</div><p class="stat-t">Data licensing cost — every source is public and open</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- METHOD -->
+  <section class="section" id="method">
+    <div class="wrap">
+      <p class="eyebrow">02 — Why this works</p>
+      <h2 class="h-sec" style="max-width:20ch;margin-bottom:36px">Trained on where fish <span class="acc">were not</span>, as well as where they were.</h2>
+      <div class="hairline hairline-2">
+        <div class="pad-lg">
+          <p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:14px">Commercial catch logs</p>
+          <p style="font-size:15px;line-height:1.6;color:var(--tide)">A vessel does not fish where it expects nothing, and would not log it if it did. A model fitted to that data learns <span class="hi">where fishers like to go</span>.</p>
+          <div class="chips" style="gap:5px" aria-hidden="true">
+            <span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#34D8C4"></span>
+            <span style="width:12px;height:12px;border:1px dashed #3A4E5C"></span><span style="width:12px;height:12px;border:1px dashed #3A4E5C"></span><span style="width:12px;height:12px;border:1px dashed #3A4E5C"></span><span style="width:12px;height:12px;border:1px dashed #3A4E5C"></span>
+          </div>
+          <p class="mono" style="font-size:10px;color:var(--depth);margin:12px 0 0">PRESENCE ONLY — ABSENCE UNOBSERVED</p>
+        </div>
+        <div class="pad-lg">
+          <p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lume);margin-bottom:14px">Scientific survey data</p>
+          <p style="font-size:15px;line-height:1.6;color:var(--tide)">Research trawls sample a fixed station grid whether or not fish are present. A haul with no record is a <span class="hi">true zero</span> — the one thing commercial logs never contain.</p>
+          <div class="chips" style="gap:5px" aria-hidden="true">
+            <span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#1A2C3A"></span><span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#1A2C3A"></span><span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#34D8C4"></span>
+            <span style="width:12px;height:12px;background:#1A2C3A"></span><span style="width:12px;height:12px;background:#34D8C4"></span><span style="width:12px;height:12px;background:#1A2C3A"></span><span style="width:12px;height:12px;background:#1A2C3A"></span>
+          </div>
+          <p class="mono" style="font-size:10px;color:var(--depth);margin:12px 0 0">PRESENCE + ABSENCE — BOTH LABELLED</p>
+        </div>
+      </div>
+      <p style="font-size:14px;color:var(--depth);margin:18px 0 0;max-width:70ch;line-height:1.6">This distinction is not a detail. Without absence records, presence/absence classification is mathematically impossible, and abundance models inherit the fleet's own site-selection bias.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- PERFORMANCE -->
+  <section class="section" id="performance">
+    <div class="wrap">
+      <p class="eyebrow">03 — Verified performance</p>
+      <h2 class="h-sec">Measured on years the model never saw.</h2>
+      <p class="mono" style="font-size:11px;color:var(--depth);line-height:1.9;margin:16px 0 28px">
+        TRAIN 2001—2018 · 9,422 hauls<br>TEST&nbsp;&nbsp;2019—2026 · 4,414 hauls
+      </p>
+
+      <div class="card scroller">
+        <table>
+          <caption class="visually-hidden" style="position:absolute;left:-9999px">Held-out performance by species</caption>
+          <thead><tr>
+            <th scope="col">Species</th><th scope="col" class="num">Presence ROC-AUC</th><th scope="col" class="num">CPUE R²</th>
+            <th scope="col" class="num">Top quintile</th><th scope="col" class="num">Bottom half</th><th scope="col" class="num">Lift</th>
+          </tr></thead>
+          <tbody>
+            <tr><td><span class="hi">Sprat</span> <span class="sci">Sprattus sprattus</span></td><td class="num acc">0.756</td><td class="num">+0.186</td><td class="num">2,071 kg/h</td><td class="num" style="color:var(--depth)">245.9</td><td class="num acc">8.4×</td></tr>
+            <tr><td><span class="hi">Atlantic herring</span> <span class="sci">Clupea harengus</span></td><td class="num acc">0.736</td><td class="num">+0.360</td><td class="num">2,005 kg/h</td><td class="num" style="color:var(--depth)">139.0</td><td class="num acc">14.4×</td></tr>
+            <tr><td><span class="hi">Atlantic cod</span> <span class="sci">Gadus morhua</span></td><td class="num acc">0.811</td><td class="num">+0.345</td><td class="num">410 kg/h</td><td class="num" style="color:var(--depth)">37.7</td><td class="num acc">10.9×</td></tr>
+            <tr><td><span class="hi">European flounder</span> <span class="sci">Platichthys flesus</span></td><td class="num acc">0.870</td><td class="num">+0.410</td><td class="num">285 kg/h</td><td class="num" style="color:var(--depth)">23.0</td><td class="num acc">12.4×</td></tr>
+            <tr><td><span class="hi">European plaice</span> <span class="sci">Pleuronectes platessa</span></td><td class="num acc">0.937</td><td class="num">+0.469</td><td class="num">146 kg/h</td><td class="num" style="color:var(--depth)">12.0</td><td class="num acc">12.2×</td></tr>
+            <tr><td><span class="hi">Common dab</span> <span class="sci">Limanda limanda</span></td><td class="num acc">0.988</td><td class="num">+0.798</td><td class="num">181 kg/h</td><td class="num" style="color:var(--depth)">0.0</td><td class="num" style="color:var(--depth)">n/a</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid-2" style="margin-top:18px">
+        <div class="note">
+          <h4>What these numbers are</h4>
+          <p>Top quintile and bottom half are the <span class="hi">observed</span> mean catch rates in held-out hauls, ranked by model prediction. Every CPUE R² exceeds the mean-predictor baseline (−0.006 to −0.161 on the same test set).</p>
+        </div>
+        <div class="note note-warn">
+          <h4>What they are not</h4>
+          <p>No oceanographic data is used in these figures — seven features only: position, depth, season, day/night. Dab's 0.988 measures a biogeographic boundary, not skill. These are a floor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- PIPELINE -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">04 — How it runs</p>
+      <h2 class="h-sec" style="margin-bottom:36px">Four stages, one command each.</h2>
+      <div class="grid-4">
+        <div class="card pad">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-bottom:14px"><path d="M3 7l9-4 9 4-9 4-9-4z" stroke="#34D8C4" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4" stroke="#1D8F82" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <h3 style="font-size:16px;margin-bottom:8px">Ingest</h3>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide);margin:0">Labelled haul and catch records stream from ICES DATRAS; ERA5 meteorology is joined on the reanalysis native 0.25° grid for each haul's day.</p>
+        </div>
+        <div class="card pad">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-bottom:14px"><rect x="3" y="3" width="7" height="7" stroke="#34D8C4" stroke-width="1.4"/><rect x="14" y="3" width="7" height="7" stroke="#1D8F82" stroke-width="1.4"/><rect x="3" y="14" width="7" height="7" stroke="#1D8F82" stroke-width="1.4"/><rect x="14" y="14" width="7" height="7" stroke="#34D8C4" stroke-width="1.4"/></svg>
+          <h3 style="font-size:16px;margin-bottom:8px">Assemble</h3>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide);margin:0">One row per haul and species. Unmatched hauls become true zeros. Shipboard readings are quarantined — they do not exist at forecast time.</p>
+        </div>
+        <div class="card pad">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-bottom:14px"><path d="M3 20V9M9 20V4M15 20v-7M21 20V7" stroke="#34D8C4" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <h3 style="font-size:16px;margin-bottom:8px">Fit</h3>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide);margin:0">Two gradient-boosted models per species — presence and log catch rate — scored strictly forward in time, never on a random split.</p>
+        </div>
+        <div class="card pad">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-bottom:14px"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" stroke="#34D8C4" stroke-width="1.4"/><circle cx="12" cy="10" r="2.4" stroke="#1D8F82" stroke-width="1.4"/></svg>
+          <h3 style="font-size:16px;margin-bottom:8px">Serve</h3>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide);margin:0">Gridded inference across the basin, delivered as a heatmap with a per-cell readout and an offline package for the trip. <span style="color:var(--signal)">Planned</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- DATA -->
+  <section class="section" id="data">
+    <div class="wrap">
+      <p class="eyebrow">05 — Data foundation</p>
+      <h2 class="h-sec">Every source is public. The method is the moat.</h2>
+      <p class="body-muted" style="margin:14px 0 32px">No licensed feeds, no proprietary telemetry, no vendor lock. Reproducible from scratch with the download scripts in the repository.</p>
+
+      <div class="hairline hairline-2">
+        <div class="pad-lg">
+          <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px">
+            <h3 style="font-size:17px">ICES DATRAS</h3><span class="badge badge-live">LIVE</span>
+          </div>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide)">Standardised scientific bottom-trawl surveys — haul position, time, swept distance, depth, gear, and catch by species and length class.</p>
+          <p class="mono" style="font-size:11px;color:var(--depth);line-height:1.9;border-top:1px solid var(--ridge);padding-top:12px;margin:0">20,358 hauls · 116,005 haul-species rows<br>180 species · 1991—2026 · no authentication</p>
+        </div>
+        <div class="pad-lg">
+          <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px">
+            <h3 style="font-size:17px">ECMWF ERA5</h3><span class="badge badge-live">LIVE</span>
+          </div>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide)">Global atmospheric reanalysis — air temperature, wind speed and dominant direction, surface pressure, cloud cover, radiation.</p>
+          <p class="mono" style="font-size:11px;color:var(--depth);line-height:1.9;border-top:1px solid var(--ridge);padding-top:12px;margin:0">0.25° · daily · sampled per haul cell-day<br>resumable ingest · no authentication</p>
+        </div>
+        <div class="pad-lg">
+          <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px">
+            <h3 style="font-size:17px">Copernicus Marine</h3><span class="badge badge-work">INTEGRATING</span>
+          </div>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide)">Baltic reanalysis — sea temperature, salinity, currents, mixed-layer depth, chlorophyll-a, Secchi depth, nutrients, oxygen.</p>
+          <p class="mono" style="font-size:11px;color:var(--depth);line-height:1.9;border-top:1px solid var(--ridge);padding-top:12px;margin:0">~1.85 km · daily · 56 depth levels<br>1993—present · 11 variables selected</p>
+        </div>
+        <div class="pad-lg">
+          <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px">
+            <h3 style="font-size:17px">EMODnet Bathymetry</h3><span class="badge badge-plan">PLANNED</span>
+          </div>
+          <p style="font-size:13px;line-height:1.55;color:var(--tide)">Seabed depth at ~115 m resolution, required to produce predictions in cells where no haul was ever taken.</p>
+          <p class="mono" style="font-size:11px;color:var(--depth);line-height:1.9;border-top:1px solid var(--ridge);padding-top:12px;margin:0">WCS 2.0.1 · European footprint<br>GEBCO fallback outside coverage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- COVERAGE -->
+  <section class="section" id="coverage">
+    <div class="wrap split split-top">
+      <div>
+        <p class="eyebrow">06 — Coverage</p>
+        <h2 class="h-sec" style="margin-bottom:18px">Retargeting a basin is a config change.</h2>
+        <p class="body-muted" style="margin-bottom:24px">The pipeline, feature builder and models are parameterised by one study-area object. The same codebase runs the Baltic and the North Sea — basins that differ sharply in salinity and optical regime. That is a test of portability, not a claim about it.</p>
+        <div class="hairline">
+          <div style="padding:15px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+            <span style="display:flex;align-items:center;gap:11px"><span style="width:7px;height:7px;background:var(--lume);border-radius:50%"></span><span style="font-size:15px" class="hi">Baltic Sea</span></span>
+            <span class="mono" style="font-size:11px;color:var(--depth)">BITS · 4.25—18.29 PSU</span>
+          </div>
+          <div style="padding:15px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+            <span style="display:flex;align-items:center;gap:11px"><span style="width:7px;height:7px;background:var(--lume);border-radius:50%"></span><span style="font-size:15px" class="hi">North Sea</span></span>
+            <span class="mono" style="font-size:11px;color:var(--depth)">NS-IBTS · fully marine</span>
+          </div>
+          <div style="padding:15px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;opacity:.6">
+            <span style="display:flex;align-items:center;gap:11px"><span style="width:7px;height:7px;border:1px solid var(--depth);border-radius:50%"></span><span style="font-size:15px;color:var(--tide)">Additional basins</span></span>
+            <span class="mono" style="font-size:11px;color:var(--depth)">REQUIRES A LABELLED SOURCE</span>
+          </div>
+        </div>
+      </div>
+      <div class="card pad-lg">
+        <p class="lbl" style="margin-bottom:16px">Adding a basin</p>
+<pre><span class="c"># one entry, one adapter</span>
+NORTH_SEA = <span class="f">StudyArea</span>(
+    key=<span class="s">"north_sea"</span>,
+    name=<span class="s">"North Sea"</span>,
+    survey=<span class="s">"NS-IBTS"</span>,
+    lat_min=<span class="n">51.0</span>, lat_max=<span class="n">62.0</span>,
+    lon_min=<span class="n">-4.0</span>, lon_max=<span class="n">12.0</span>,
+    quarters=(<span class="n">1</span>, <span class="n">3</span>),
+)</pre>
+        <p class="mono" style="font-size:11px;color:var(--depth);line-height:1.8;border-top:1px solid var(--ridge);margin:16px 0 0;padding-top:14px">$ python scripts/download_survey_data.py \<br>&nbsp;&nbsp;&nbsp;&nbsp;--area north_sea</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ETHICS -->
+  <section class="section">
+    <div class="wrap">
+      <div style="border:1px solid var(--line-2);background:linear-gradient(180deg,var(--deep),#07121a);padding:32px">
+        <div class="split split-top">
+          <div>
+            <p class="eyebrow">07 — Ecological design</p>
+            <h2 class="h-sub" style="margin-bottom:16px">Hiding a species is not protecting it.</h2>
+            <p style="font-size:15px;line-height:1.65;color:var(--tide);margin:0">Protected and moratorium species are removed from the prediction surface entirely. But species-level filtering alone is inadequate: protected species share habitat with legal targets, so a coordinate shown as productive for one is often productive for the other.</p>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7.5 3.4v5.1c0 4.6-3.2 8.6-7.5 9.5-4.3-.9-7.5-4.9-7.5-9.5V6.4L12 3z" stroke="#34D8C4" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              <div><h4>Species exclusion</h4><p>Red-list and moratorium species never enter the model registry or the map.</p></div>
+            </div>
+            <div class="step">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="1" stroke="#34D8C4" stroke-width="1.4"/><path d="M3.5 9.5h17M9.5 3.5v17" stroke="#1D8F82" stroke-width="1.2"/></svg>
+              <div><h4>Spatial masking</h4><p>No forecast is produced inside legally closed areas, for any species. <span style="color:var(--signal)">Planned</span></p></div>
+            </div>
+            <div class="step">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="#34D8C4" stroke-width="1.4"/><path d="M12 7v5l3.2 2" stroke="#1D8F82" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <div><h4>Seasonal closures</h4><p>Spawning windows blank the surface on a calendar, not a toggle. <span style="color:var(--signal)">Planned</span></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="access">
+    <div class="wrap">
+      <h2 class="h-hero" style="font-size:clamp(30px,5.5vw,42px);margin-bottom:16px">Put the next trip on evidence.</h2>
+      <p class="lede" style="margin:0 auto 30px">Early access is open to commercial operators, research institutes and fisheries authorities in the Baltic and North Sea.</p>
+      <div class="hero-cta" style="margin-bottom:40px">
+        <a class="btn btn-primary" href="mailto:hello@astryxstartup.com?subject=MarineCast%20early%20access">Request early access</a>
+        <a class="btn btn-ghost" href="/technology.html">Read the specification</a>
+      </div>
+      <div class="grid-3" style="text-align:left;max-width:900px;margin:0 auto">
+        <div class="card pad"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lume);margin-bottom:9px">Operators</p><p style="font-size:13px;line-height:1.55;color:var(--tide);margin:0">Per-vessel forecast access, offline trip packages, catch logging.</p></div>
+        <div class="card pad"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lume);margin-bottom:9px">Research</p><p style="font-size:13px;line-height:1.55;color:var(--tide);margin:0">Model cards, reproducible pipelines, co-authored validation studies.</p></div>
+        <div class="card pad"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lume);margin-bottom:9px">Authorities</p><p style="font-size:13px;line-height:1.55;color:var(--tide);margin:0">Basin-wide distribution surfaces for stock and effort monitoring.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div>
+      <a class="brand" href="/" style="margin-bottom:12px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.2" stroke="#2E4A5C" stroke-width="1.3"/>
+          <path d="M2.6 9.4c3.6 1.9 7 1.9 9.4 0 2.4-1.9 5.8-1.9 9.4 0M2.6 14.6c3.6 1.9 7 1.9 9.4 0 2.4-1.9 5.8-1.9 9.4 0" stroke="#2E4A5C" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span style="font-size:14px;color:var(--tide)">MarineCast</span>
+      </a>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/technology.html">Science</a>
+        <a href="#data">Data sources</a>
+        <a href="mailto:hello@astryxstartup.com">Contact</a>
+      </nav>
+    </div>
+    <p class="attrib">
+      GENERATED USING E.U. COPERNICUS MARINE SERVICE INFORMATION<br>
+      SURVEY DATA COURTESY OF ICES DATRAS · ERA5 © ECMWF
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
